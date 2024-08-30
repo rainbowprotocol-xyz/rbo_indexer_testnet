@@ -7,13 +7,16 @@ By running this application, you will be able to:
 - Submit Blockheader and hashes to validate
 - Help expanding the network and get rewards (After Mainnet launch)
 
+--
+
 ## Table of Contents
 
 - [RBO Indexer Testnet](#rbo-indexer-testnet)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
-    - [Instructions](#instructions)
+  - [Instructions](#instructions)
 
+--
 
 ## Prerequisites
 
@@ -23,7 +26,7 @@ Before running, ensure you have the following dependencies installed:
 - [Bitcoin Core with Testnet 4 enabled](https://github.com/mocacinno/btc_testnet4)
 
 
-### Instructions
+## Instructions
 0. **Rune the bitcoin core mentioned above**:
    1. Follow the instructions on [https://github.com/mocacinno/btc_testnet4](https://github.com/mocacinno/btc_testnet4)
    2. Make sure you have rpc **endpoint**, **username** and **password** created, which will be used in the following step.
