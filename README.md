@@ -7,7 +7,7 @@ By running this application, you will be able to:
 - Submit Blockheader and hashes to validate
 - Help expanding the network and get rewards (After Mainnet launch)
 
---
+---
 
 ## Table of Contents
 
@@ -16,8 +16,8 @@ By running this application, you will be able to:
   - [Prerequisites](#prerequisites)
   - [Instructions](#instructions)
 
---
 
+---
 ## Prerequisites
 
 Before running, ensure you have the following dependencies installed:
@@ -25,6 +25,7 @@ Before running, ensure you have the following dependencies installed:
 - Ubuntu 22.04 +
 - [Bitcoin Core with Testnet 4 enabled](https://github.com/mocacinno/btc_testnet4)
 
+---
 
 ## Instructions
 0. **Rune the bitcoin core mentioned above**:
