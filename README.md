@@ -1,1 +1,44 @@
-# rbo_indexer_testnet
+# RBO Indexer Testnet
+
+An incentivized RBO Indexer for Testnet.
+By running this application, you will be able to:
+
+- Generate RBO Transaction Blocks on top of Bitcoin
+- Submit Blockheader and hashes to validate
+- Help expanding the network and get rewards (After Mainnet launch)
+
+## Table of Contents
+
+- [Prerequisites](#Prerequisites)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Support](#support)
+
+## Prerequisites
+
+Before running, ensure you have the following dependencies installed:
+
+- Ubuntu 22.04 +
+- [Bitcoin Core with Testnet 4 enabled](https://github.com/mocacinno/btc_testnet4)
+
+
+### Installation Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet.git
+   ```
+
+2. **Connect Bitcoin Core and Run indexer**:
+   ```bash
+   ./rbo_indexer_testnet/rbo_worker worker --rpc {your_bitcoin_core_endpoint} --password {password} --username {username} --start_height 42000
+   ```
+
+3. **Lookup the folder and check your commits**
+   * check local folder and locate the json file:
+  ```json
+  ...
+  ```
+
+   * login to [Testnet](https://testnet.rainbowprotocol.xyz/explorer), input the Principal ID and see the result
