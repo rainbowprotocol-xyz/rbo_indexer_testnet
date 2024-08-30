@@ -9,11 +9,11 @@ By running this application, you will be able to:
 
 ## Table of Contents
 
-- [Prerequisites](#Prerequisites)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Support](#support)
+- [RBO Indexer Testnet](#rbo-indexer-testnet)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+    - [Instructions](#instructions)
+
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ Before running, ensure you have the following dependencies installed:
 - [Bitcoin Core with Testnet 4 enabled](https://github.com/mocacinno/btc_testnet4)
 
 
-### Installation Steps
+### Instructions
 
 1. **Download release binary**:
    [https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker](https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker)
