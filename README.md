@@ -25,10 +25,8 @@ Before running, ensure you have the following dependencies installed:
 
 ### Installation Steps
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet.git
-   ```
+1. **Download release binary**:
+   [https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker](https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker)
 
 2. **Connect Bitcoin Core and Run indexer**:
    ```bash
