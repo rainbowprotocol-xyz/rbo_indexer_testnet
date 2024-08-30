@@ -33,7 +33,7 @@ Before running, ensure you have the following dependencies installed:
 
 2. **Connect Bitcoin Core and Run indexer**:
    ```bash
-   ./rbo_indexer_testnet/rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
+   ./rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
    ```
 
 3. **Lookup the folder and check your commits**
