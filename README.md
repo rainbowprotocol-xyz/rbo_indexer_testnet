@@ -40,10 +40,17 @@ Before running, ensure you have the following dependencies installed:
    ./rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
    ```
 
+   You should be able to see logs like this:
+
+   ```bash
+    Aug 31 00:00:00.032 INFO[] global_height is 0, v: 0.1.0, n: rbo_worker
+    Aug 31 00:00:00.244 INFO[] Latest height is ...Some(41000), v: 0.1.0, n: rbo_worker
+   ```
+
 3. **Lookup the folder and check your commits**
    * check local folder and locate the json file:
-  ```json
-  ...
-  ```
-
+   `./identity/principal.json`, open and copy the long string like :`xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxx`
+   
    * login to [Testnet](https://testnet.rainbowprotocol.xyz/explorer), input the Principal ID and see the result
+
+   * Also, you should copy your `./identity/private_key.pem` to somewhere safe, and keep it in the `identity` folder when the indexer is running 
