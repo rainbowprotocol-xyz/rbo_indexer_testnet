@@ -44,7 +44,7 @@ Before running, ensure you have the following dependencies installed:
 
    ```bash
     Aug 31 00:00:00.032 INFO[] global_height is 0, v: 0.1.0, n: rbo_worker
-    Aug 31 00:00:00.244 INFO[] Latest height is ...Some(41000), v: 0.1.0, n: rbo_worker
+    Aug 31 00:00:00.244 INFO[] Latest height is ...Some(42000), v: 0.1.0, n: rbo_worker
    ```
 
 3. **Lookup the folder and check your commits**
