@@ -46,6 +46,14 @@ Before running, ensure you have the following dependencies installed:
    ./rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
    ```
 
+   If you are using the `docker-compose.yml` in [https://github.com/rainbowprotocol-xyz/btc_testnet4](https://github.com/rainbowprotocol-xyz/btc_testnet4)
+   
+   You should probrobably run bash like this:
+
+   ```
+   ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000
+   ```
+
    You should be able to see logs like this:
 
    ```bash
