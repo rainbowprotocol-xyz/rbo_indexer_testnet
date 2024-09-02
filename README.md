@@ -28,14 +28,20 @@ Before running, ensure you have the following dependencies installed:
 ---
 
 ## Instructions
-0. **Rune the bitcoin core mentioned above**:
-   1. Follow the instructions on [https://github.com/mocacinno/btc_testnet4](https://github.com/mocacinno/btc_testnet4)
+
+
+1. **Run the bitcoin core mentioned above**:
+   1. Follow the instructions on [https://github.com/rainbowprotocol-xyz/btc_testnet4](https://github.com/rainbowprotocol-xyz/btc_testnet4)
    2. Make sure you have rpc **endpoint**, **username** and **password** created, which will be used in the following step.
 
-1. **Download release binary**:
-   [https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker](https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker)
+2. **Clone this repo and download release binary**
+   ```bash
+   git clone git@github.com:rainbowprotocol-xyz/rbo_indexer_testnet.git && cd rbo_indexer_testnet
+   wget https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker
+   chmod +x rbo_worker
+   ```
 
-2. **Connect Bitcoin Core and Run indexer**:
+3. **Connect Bitcoin Core and Run indexer**:
    ```bash
    ./rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
    ```
@@ -47,7 +53,7 @@ Before running, ensure you have the following dependencies installed:
     Aug 31 00:00:00.244 INFO[] Latest height is ...Some(42000), v: 0.1.0, n: rbo_worker
    ```
 
-3. **Lookup the folder and check your commits**
+4. **Lookup the folder and check your commits**
    * check local folder and locate the json file:
    `./identity/principal.json`, open and copy the long string like :`xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxxxx-xxx`
    
