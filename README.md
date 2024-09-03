@@ -23,7 +23,7 @@ By running this application, you will be able to:
 Before running, ensure you have the following dependencies installed:
 
 - Ubuntu 22.04 +
-- [Bitcoin Core with Testnet 4 enabled](https://github.com/mocacinno/btc_testnet4)
+- [Bitcoin Core with Testnet 4 enabled](https://github.com/rainbowprotocol-xyz/btc_testnet4)
 
 ---
 
