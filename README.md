@@ -36,7 +36,7 @@ Before running, ensure you have the following dependencies installed:
 
 2. **Clone this repo and download release binary**
    ```bash
-   git clone git@github.com:rainbowprotocol-xyz/rbo_indexer_testnet.git && cd rbo_indexer_testnet
+   git clone [https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet.git](https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet.git) && cd rbo_indexer_testnet
    wget https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker
    chmod +x rbo_worker
    ```
