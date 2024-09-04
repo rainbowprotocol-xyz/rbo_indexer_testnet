@@ -1,4 +1,4 @@
-#  🌈  RBO Indexer Testnet
+# 🌈 RBO Indexer Testnet
 
 Welcome to the **RBO Indexer Testnet**! This is your gateway to participating in the decentralized future by contributing to the RBO network. By running this application, you can:
 
@@ -51,7 +51,7 @@ Before you begin, ensure your environment meets the following requirements:
        - `"-rpcallowip=0.0.0.0/0"`
        - `"-rpcbind=0.0.0.0:5000"`
 
-    **Note:** If you are new to Docker or Bitcoin Core, it's recommended to use the **default settings** provided in the `docker-compose.yml` file. Adjustments are optional and only necessary if you have specific requirements.
+   **Note:** If you are new to Docker or Bitcoin Core, it's recommended to use the **default settings** provided in the `docker-compose.yml` file. Adjustments are optional and only necessary if you have specific requirements.
 
 3. **Start Bitcoin Core** by running:
 
@@ -90,6 +90,12 @@ Before you begin, ensure your environment meets the following requirements:
 
    ```bash
    ./rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
+   ```
+
+   If you are using the `docker-compose.yml` in [https://github.com/rainbowprotocol-xyz/btc_testnet4](https://github.com/rainbowprotocol-xyz/btc_testnet4), you should probably run:
+
+   ```bash
+   ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000
    ```
 
    You should see logs similar to:
