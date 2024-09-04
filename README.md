@@ -51,7 +51,7 @@ Before you begin, ensure your environment meets the following requirements:
        - `"-rpcallowip=0.0.0.0/0"`
        - `"-rpcbind=0.0.0.0:5000"`
 
-   > **Note for Beginners:** If you are new to Docker or Bitcoin Core, it's recommended to use the **default settings** provided in the `docker-compose.yml` file. Adjustments are optional and only necessary if you have specific requirements.
+    **Note:** If you are new to Docker or Bitcoin Core, it's recommended to use the **default settings** provided in the `docker-compose.yml` file. Adjustments are optional and only necessary if you have specific requirements.
 
 3. **Start Bitcoin Core** by running:
 
@@ -121,4 +121,3 @@ If you encounter any issues or have questions, feel free to reach out via our [c
 ---
 
 Thank you for contributing to the RBO Network! Your efforts are helping build a decentralized future. 🌐
-```
