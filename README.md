@@ -1,4 +1,4 @@
-# 🚀 RBO Indexer Testnet
+#  🌈  RBO Indexer Testnet
 
 Welcome to the **RBO Indexer Testnet**! This is your gateway to participating in the decentralized future by contributing to the RBO network. By running this application, you can:
 
