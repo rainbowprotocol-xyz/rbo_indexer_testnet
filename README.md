@@ -97,6 +97,8 @@ Before you begin, ensure your environment meets the following requirements:
 
    ```bash
    ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000
+   # Using nohup to run if you want to run indexer backend
+   nohup ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000 > worker.log &
    ```
 
    You should see logs similar to:
