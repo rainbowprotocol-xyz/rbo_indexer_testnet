@@ -82,10 +82,11 @@ Before you begin, ensure your environment meets the following requirements:
 1. **Download and set up the indexer**:
 
    ```bash
+   git clone https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet.git && cd rbo_indexer_testnet
    wget https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker
    chmod +x rbo_worker
    ```
-
+    
 2. **Start the indexer**:
 
    ```bash
