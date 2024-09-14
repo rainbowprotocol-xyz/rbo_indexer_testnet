@@ -85,8 +85,14 @@ Before you begin, ensure your environment meets the following requirements:
 
    ```bash
    git clone https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet.git && cd rbo_indexer_testnet
-   wget https://github.com/rainbowprotocol-xyz/rbo_indexer_testnet/releases/download/v0.0.1-alpha/rbo_worker
-   chmod +x rbo_worker
+   # Get Latest rbo_worker binary
+   # For x86_64
+    wget https://storage.googleapis.com/rbo/rbo_worker/rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz && tar -xzvf rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz
+    cp rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8/rbo_worker rbo_worker 
+   # For arm64
+   wget https://storage.googleapis.com/rbo/rbo_worker/rbo_worker-linux-arm64-0.0.2-20240914-4ec80a8.tar.gz && tar -xzvf rbo_worker-linux-arm64-0.0.2-20240914-4ec80a8.tar.gz
+   cp rbo_worker-linux-arm64-0.0.2-20240914-4ec80a8/rbo_worker rbo_worker 
+
    ```
     
 2. **Start the indexer**:
