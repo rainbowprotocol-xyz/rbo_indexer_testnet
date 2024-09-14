@@ -100,15 +100,20 @@ Before you begin, ensure your environment meets the following requirements:
 2. **Start the indexer**:
 
    ```bash
-   ./rbo_worker worker --rpc {bitcoin_core_endpoint} --password {bitcoin_core_password} --username {bitcoin_core_username} --start_height 42000
+   ./rbo_worker worker \
+    --rpc {bitcoin_core_endpoint} \ # the bitcoind endpoint 
+    --password {bitcoin_core_password} \ # the password in bitcoind rpc
+    --username {bitcoin_core_username} \ # the username in bitcoind rpc
+    --start_height 42000 \ #indexing height, you can custom it
+    --indexer_port 5050 # the running port of indexer, default is 5050
    ```
 
    If you are using the `docker-compose.yml` in [https://github.com/rainbowprotocol-xyz/btc_testnet4](https://github.com/rainbowprotocol-xyz/btc_testnet4), you should probably run:
 
    ```bash
-   ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000
+   ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000 --indexer_port 5050
    # Using nohup to run if you want to run indexer backend
-   nohup ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000 > worker.log &
+   nohup ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000 --indexer_port 5050 > worker.log &
    ```
    To customize running port, you can pass `--indexer_port [PORT_NUMBER]`. Default port is `5050`.
 
