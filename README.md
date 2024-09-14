@@ -145,7 +145,7 @@ Before you begin, ensure your environment meets the following requirements:
 
    - Input the Principal ID and review the details.
 
-3. **IMPORTANT SECURITY NOTE, MUST READ**
+3. :bangbang: **IMPORTANT SECURITY NOTE, MUST READ**
      1. You should save these file to somewhere **SAFE** 
         * `./identity/private_key.pem` 
         * `./identity/identity.json` 
