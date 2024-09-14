@@ -17,6 +17,7 @@ Welcome to the **RBO Indexer Testnet**! This is your gateway to participating in
     - [1. Run Bitcoin Core on Docker](#1-run-bitcoin-core-on-docker)
     - [2. Connect Bitcoin Core and Run Indexer](#2-connect-bitcoin-core-and-run-indexer)
     - [3. Verify Your Setup](#3-verify-your-setup)
+    - [4. Upgrade Indexer](#4-upgrade-indexer)
   - [📞 Support](#-support)
 
 ---
@@ -148,8 +149,27 @@ Before you begin, ensure your environment meets the following requirements:
      1. You should save these file to somewhere **SAFE** 
         * `./identity/private_key.pem` 
         * `./identity/identity.json` 
-     2. Keep them in the `identity` folder when the indexer is running   
+     2. Keep them in the `identity` folder when the indexer is running
+  
+### 4. Upgrade Indexer
 
+```bash
+# Find the running process pid and kill it
+# Change 5050 to the port you customized
+/bin/netstat -ntpl | grep 5050 | awk '{print $NF}' |  awk -F"/" '{print $1}' | xargs kill -9 
+
+# Replace with the new rbo_worker
+   # For x86_64
+   wget https://storage.googleapis.com/rbo/rbo_worker/rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz && tar -xzvf rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz
+   cp rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8/rbo_worker rbo_worker
+   
+   # For arm64
+   wget https://storage.googleapis.com/rbo/rbo_worker/rbo_worker-linux-arm64-0.0.2-20240914-4ec80a8.tar.gz && tar -xzvf rbo_worker-linux-arm64-0.0.2-20240914-4ec80a8.tar.gz
+   cp rbo_worker-linux-arm64-0.0.2-20240914-4ec80a8/rbo_worker rbo_worker
+# Start the new one 
+  nohup ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000 --indexer_port 5050 > worker.log &
+```
+ 
 ---
 
 ## 📞 Support
