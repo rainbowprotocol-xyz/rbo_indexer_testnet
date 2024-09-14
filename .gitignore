@@ -2,3 +2,4 @@ identity/*.json
 identity/*.pem
 logs/*.log
 rbo_worker
+**/*.DS_Store
