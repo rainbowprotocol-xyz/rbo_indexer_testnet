@@ -157,7 +157,7 @@ Before you begin, ensure your environment meets the following requirements:
 # Find the running process pid and kill it
 # Change 5050 to the port you customized
 /bin/netstat -ntpl | grep 5050 | awk '{print $NF}' |  awk -F"/" '{print $1}' | xargs kill -9 
-
+# Enter the directory where the original rbo_worker is located
 # Replace with the new rbo_worker
    # For x86_64
    wget https://storage.googleapis.com/rbo/rbo_worker/rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz && tar -xzvf rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz
