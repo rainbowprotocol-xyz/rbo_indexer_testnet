@@ -110,6 +110,7 @@ Before you begin, ensure your environment meets the following requirements:
    # Using nohup to run if you want to run indexer backend
    nohup ./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000 > worker.log &
    ```
+   To customize running port, you can pass `--indexer_port [PORT_NUMBER]`. Default port is `5050`.
 
    You should see logs similar to:
 
